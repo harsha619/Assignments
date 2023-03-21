@@ -25,14 +25,14 @@ public class Vampire {
         if(numberStr.length()%2==0){
             for (long i=power;i<=Math.sqrt(number)+1;i++)
             {
-                long x=i;
-                long y=number/i;
+                long value=i;
+                long factor=number/i;
 
-                if(x%10==0 && y%10==0 )
+                if(value%10==0 && factor%10==0 )
                     break;
                 else{
-                    String xString= String.valueOf(x);
-                    String yString= String.valueOf(y);
+                    String xString= String.valueOf(value);
+                    String yString= String.valueOf(factor);
                     if(sort.string(numberStr).equals(sort.string(xString+yString))) return true;
                 }
 
