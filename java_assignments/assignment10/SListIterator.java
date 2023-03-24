@@ -5,7 +5,7 @@ public class SListIterator <T>{
 
     }
     public Node<T> insert(T data){
-        return new Node<>(data);
+        return new Node<T>(data);
     }
     public  Node<T> remove (Node<T> node, Node<T> head) {
         Node<T> tempNode= node;
